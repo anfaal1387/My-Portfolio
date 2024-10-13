@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.portfolio-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.navlist {
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: #262525;
+    z-index: 10;
+}
+
+.navlist li {
+    list-style: none;
+}
+
+.navlist li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+}
+
+.left-container, .right-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.left-container {
+    background: #262525;
+    width: 70%;
+    padding-left: 3rem;
+}
+
+.right-container {
+    background: linear-gradient(-45deg, #3877ff, #262525 70%);
+    width: 30%;
+}
+
+.icons .fa-brands {
+    color: #bbb;
+    font-size: 1.7rem;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.content {
+    margin-left: 4rem;
+}
+
+.content .intro {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.content .intro span {
+    color: #5db9ee;
+}
+
+.content h1 {
+    font-size: 4rem;
+    color: #5db9ee;
+}
+
+.content .description {
+    font-size: 1.2rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+
+.btn-container button {
+    border: .1rem solid #5db9ee;
+    font-size: 1.2rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.button:nth-child(1) {
+    background: #5db9ee;
+    color: black;
+}
+
+.button:nth-child(2) {
+    background: transparent;
+    color: #5db9ee;
+    margin-left: 2rem;
+}
+
+.button:nth-child(1):hover {
+    background: transparent;
+    color: #5db9ee;
+}
+
+.button:nth-child(2):hover {
+    background: #5db9ee;
+    color: black;
+}
+
+.icons .fa-brands:hover {
+    cursor: pointer;
+    background: linear-gradient(#fff, #5db9ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.design .circle {
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.circle:nth-child(1) {
+    background: linear-gradient(90deg, transparent 50%, transparent 50%);
+    width: 38rem;
+}
+
+.navlist li a::after, .navlist .active::after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s;
+}
+
+.navlist li a:hover:after, .navlist .active::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+/* About and Contact Section */
+.about-contact-section {
+    display: flex;
+    padding: 4rem;
+    background-color: #262525;
+    color: #fff;
+}
+
+.about-container, .contact-container {
+    width: 50%;
+    padding: 2rem;
+}
+
+.about-container h2, .contact-container h2 {
+    font-size: 2rem;
+    color: #5db9ee;
+    margin-bottom: 1.5rem;
+}
+
+.about-container p {
+    font-size: 1.2rem;
+    color: #bbb;
+}
+
+.contact-container ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    color: #bbb;
+}
+
+.contact-container ul li {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-container ul li i {
+    margin-right: 0.5rem;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #262525;
+    color: #bbb;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer-bottom {
+    font-size: 1rem;
+}
+
+.circle:nth-child(2) {
+    background-image: url(Muscut\ Airport\ Pic\ best\ for\ Profile\ Picture.jpg);
+    width: 30rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: .1rem solid white;
+    box-shadow:
+    0 0 2rem #3877ff,
+    inset 0 0 2rem #3877ff,
+    0 0 4rem #3877ff;
+
+}
